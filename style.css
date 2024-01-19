@@ -1,0 +1,114 @@
+body
+{
+ background-image: url("./assets/images/an-stylish-blue-background-on-the-left-side-with-a-credit-card.png");
+ background-size: 100%;
+ font-family: 'Permanent Marker';
+}
+.top-container
+{
+    display: flex;
+    margin: 20px;
+    
+}
+.pay
+{
+    font-size: 20px;
+    text-decoration: underline;
+    flex:4;
+    color: antiquewhite;
+    
+}
+.tx
+{
+    flex: 1;
+    color: antiquewhite;
+}
+.box-container
+{
+    background: rgb(3, 74, 93);
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 500px;
+    gap: 30px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+img
+{
+    height: 15px;
+    width: 15px;
+    
+}
+.inputtextbox
+{
+    position: relative;
+    padding: 20px;
+    
+}
+.inputtextbox input
+{
+ width: 80%;
+ padding: 10px;
+ background-color:rgb(3, 74, 93) ;
+ border:2px solid white;
+ outline: none;
+ color:antiquewhite ;
+ font-size: 1em;
+ font-family: 'Permanent marker';
+}
+
+.inputtextbox span
+{
+    position: absolute;
+    left:3%;
+    padding: 10px;
+    color: antiquewhite;
+    pointer-events: none;
+    font-weight: 100;
+    font-size: 1em;
+    transition: 0.5s;
+
+}
+.inputtextbox input:valid ~span,
+.inputtextbox input:focus ~span{
+    color: coral;
+    transform: translateX(10px) translateY(-7px);
+    padding: 0 10px;
+    background: rgb(3, 74, 93);
+    font-size: 10px;
+    letter-spacing: 1em;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.no
+{
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: underline;
+}
+input[type="date"]
+{
+    background-color:rgb(3, 74, 93); 
+    color: antiquewhite;
+    outline: none;
+    border-color: antiquewhite;
+    width: 150px;
+    height: 30px;
+    margin-left:28%;    
+}
+button
+{
+    width: 160px;
+    height: 30px;
+    margin-left: 122px;
+    background-color:rgb(3, 74, 93) ;
+    outline: none;
+    border: 2px solid antiquewhite;
+    font-family: 'Permanent Marker';
+    color:antiquewhite
+}
+button:hover
+{
+    box-shadow: 0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 100px cyan, 0 0 200px cyan;
+}
